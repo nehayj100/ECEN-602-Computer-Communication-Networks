@@ -1,0 +1,8 @@
+build:server client
+
+    g++ -o server nhttpServer.cc
+    g++ -o client nhttpClient.cc
+    
+clean:
+
+    -rm -f server client

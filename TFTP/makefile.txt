@@ -1,0 +1,10 @@
+default: server
+
+server_MP3.o: tftp_server.c
+		gcc -g -c tftp_server.c -o server_MP3.o
+
+server: server_MP3.o
+		gcc server_MP3.o -o server
+
+clean:
+		rm -rf server *.o
